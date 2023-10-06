@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.container{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-wrapper{
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.inner-wrapper{
+    width: 500%;
+    height: 100%;
+    position: relative;
+    left: -100%;
+}
+
+.slide{
+    width: 600px;
+    height: 100%;
+    float: left;
+    font-size: 100px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.button{
+    width: 30px;
+    height: 30px;
+    border-top: 2px solid black;
+    position: absolute;
+    cursor: pointer;
+}
+
+.prev{
+    border-left: 2px solid black;
+    left: 20%;
+    transform: rotate(-45deg);
+}
+
+.next{
+    border-right: 2px solid black;
+    right: 20%;
+    transform: rotate(45deg);
+}
